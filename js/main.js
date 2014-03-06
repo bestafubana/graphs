@@ -116,7 +116,14 @@ drawAxis();
 //drawRectangle(nearPoint(origin, 20,0), 30, -80);
 drawGraph(xData, yData);
 
+var dataURL = document.getElementById("canvas").toDataURL();
+document.getElementById('imgLink').href = dataURL;
 
+
+/*
+var dataURL = canvas.toDataURL();
+document.getElementById('canvasImg').src = dataURL;
+*/
 /*ctx.beginPath();
 ctx.moveTo(25,25);
 ctx.lineTo(25,475);
