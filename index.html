@@ -5,8 +5,68 @@
 	</head>
 	
 	<body>
-		<canvas id="canvas" height="500" width="600"></canvas>
-		<a id="imgLink" href="" download="happyimg.png"> Click here to Download the graph in an image. </a>
+		<div id="wrapper">
+
+			<canvas id="canvas" height="550" width="620"></canvas>
+	
+			<div id="formBox">
+				<img src="imgs/help-icon.png" id="help" alt="help icon"/>
+				<h1>Bar Chart Generator</h1>
+			
+				<label for="chartTitle">Chart Title</label>
+				<input type="text" id="chartTitle" value="Amazing Chart Title"/>
+				
+				<fieldset>
+					<legend>X Axis</legend>
+					
+					<label for="xTitle">Title</label>
+					<input type="text" id="xTitle" value="X Axis Description"/>
+				
+					<label for="xValue">Values</label>
+					<input type="text" id="xValue" value='ABC, BCD, CDE, DEF, EFG, FGH, GHI'/>				
+				</fieldset>
+				
+
+				<fieldset>
+					<legend>Y Axis</legend>
+				
+					<label for="yTitle">Title</label>
+					<input type="text" id="yTitle" value="Y Axis Description"/>
+				
+					<label for="yValue">Values</label>
+					<input type="text" id="yValue" value='200, 400, 150, 550, 320, 350, 40' />
+				</fieldset>
+				
+				<fieldset>
+					<legend>Colours</legend>
+				
+					<label for="textColour">Text Colour</label>
+					<input type="text" id="textColour" value="#603327" /> <div id="textC"></div>
+				
+					<label for="barColour">Bars Colour</label>
+					<input type="text" id="barColour" value="#A4FF42"/> <div id="barC"></div>
+				</fieldset>
+							
+				 <a id="imgLink" href="" download="happyimg.png"> <img src="imgs/download-icon.png" alt="generated chart"/></a>
+				 <input type="button" value="Generate" id="generate" />
+				 
+				 <div style="display:none;" id="tooltip">
+				 	<p>
+					   Just feed the form as the example data shows, the two axis need 
+					   the same number of elements or it won't work. 
+					   Change the values and see how it does everything.
+				 	</p>
+				 	<p>Notice: </p>
+				 	<p>
+						This is just an exercise of HTML5 canvas development. 
+						This is just a test program that does not intend to be a production tool. 
+						There are still many errors, security failures (the silliest XSS will work) 
+						and it could be improved in many ways. 
+				 	</p>
+				 	
+				 </div>
+			</div>
+		</div>		
 	</body>
 	<script src="js/main.js"></script>
 </html>
