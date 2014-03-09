@@ -1,3 +1,6 @@
+/* Coded by Natanael Silva - just for fun
+*	https://github.com/bestafubana
+*/
 
 (function(chartTitleId, xTitleId, yTitleId, xValueId, yValueId, textColourId,
 		 barColourId, barCId, textCId, buttonId, helpId){
